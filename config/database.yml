@@ -1,0 +1,15 @@
+common: &common
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  username: jiweiweisg
+  password: 
+
+development:
+  <<: *common
+  database: sg_property_development
+
+test:
+  <<: *common
+  database: sg_property_test

@@ -1,0 +1,48 @@
+<%= form_tag search_path, method: :get, class: "custom" do %>
+  <div class="row">
+    <div class="large-2 small-4 columns">
+      <div class="row collapse">
+        <label for="min_price">Min Price</label>
+        <div class="small-8 columns">
+          <%= number_field_tag 'min_price', params[:min_price], min: 0, placeholder: "Min" %>
+        </div>
+        <div class="small-4 columns">
+          <span class="postfix">SGD</span>
+        </div>
+      </div>
+    </div>
+    <div class="large-2 small-4 columns">
+      <div class="row collapse">
+        <label for="max_price">Max Price</label>
+        <div class="small-8 columns">
+          <%= number_field_tag 'max_price', params[:max_price], min: 0, placeholder: "Max" %>
+        </div>
+        <div class="small-4 columns">
+          <span class="postfix">SGD</span>
+        </div>
+      </div>
+    </div>
+    <div class="large-3 small-4 columns">
+      <label for="min_size">Property Size</label>
+      <div class="row collapse">
+        <div class="small-8 columns">
+          <%= select_tag "min_size", options_for_select(Property::PROPERTY_SIZES.map{|size| [number_with_delimiter(size), size]}, params[:min_size]), prompt: "All Sizes" %>
+        </div>
+        <div class="small-4 columns">
+          <span class="postfix">sqft</span>
+        </div>
+      </div>
+    </div>
+    <div class="large-3 small-8 columns">
+      <label for="name">Property Name</label>
+      <%= select_tag "name", options_for_select(Property::PROPERTY_NAMES, params[:name]) %>
+    </div>
+    <div class="large-2 small-4 columns">
+      <label><%= "&nbsp;".html_safe %></label>
+      <%= submit_tag "Search", class: "button postfix" %>
+    </div>
+    <div class="large-12 columns">
+      <hr>
+    </div>
+  </div>
+<%- end -%>
