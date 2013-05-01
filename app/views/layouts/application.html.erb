@@ -7,14 +7,14 @@
   <head>
   	<meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  	<title><%= content_for?(:title) ? yield(:title) : "SG Property" %></title>
+  	<title><%= content_for?(:title) ? yield(:title) : "SG Property Test App" %></title>
   	<%= stylesheet_link_tag    "application" %>
-  	<%= javascript_include_tag "vendor/custom.modernizr" %>
+  	<%= javascript_include_tag "vendor/custom.modernizr", "application" %>
     <%= csrf_meta_tags %>
   </head>
 
   <body class="<%= controller_name %> <%= action_name %>">
+    <%= render 'layouts/title' %>
     <%= yield %>
-    <%= javascript_include_tag "application" %>
   </body>
 </html>

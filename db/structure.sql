@@ -45,7 +45,8 @@ CREATE TABLE properties (
     agent_name character varying(255),
     image_url character varying(255),
     created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL
+    updated_at timestamp without time zone NOT NULL,
+    display_price character varying(255)
 );
 
 
@@ -104,3 +105,5 @@ CREATE UNIQUE INDEX unique_schema_migrations ON schema_migrations USING btree (v
 --
 
 INSERT INTO schema_migrations (version) VALUES ('20130501011932');
+
+INSERT INTO schema_migrations (version) VALUES ('20130501104047');
