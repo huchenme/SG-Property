@@ -2,7 +2,9 @@
 
 Live site: [sgproperty.herokuapp.com](http://sgproperty.herokuapp.com "live site")
 
-# Quick Start
+---
+
+## Quick Start
 
 This section is for developers to get this app up and running on a development machine.
 
@@ -20,7 +22,8 @@ rake db:migrate
 rails server # or unicorn -p 3000
 ```
 
-# What have not done yet
+## What have not been done yet
 
-* search field validation
-* phone number for STProperty
+* Search field validation
+* Phone number for STProperty
+* Use [jQuery plugin](http://www.datatables.net/ "DataTables (table plug-in for jQuery)") to make table easier to search
