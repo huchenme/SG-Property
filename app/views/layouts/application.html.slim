@@ -1,0 +1,18 @@
+doctype html
+/[if lt IE 7 ]
+  html.ie6 lang="en"
+/[if IE 7 ]
+  html.ie7 lang="en"
+/[if IE 8 ]
+  html.ie8 lang="en"
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=(device-width,)initial-scale=1.0" 
+    title = content_for?(:title) ? yield(:title) : "SG Property Test App"
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "vendor/custom.modernizr", "application"
+    = csrf_meta_tags
+  body(class="#{controller_name} #{action_name}")
+    = render 'layouts/title'
+    = yield
