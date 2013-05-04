@@ -12,7 +12,7 @@ gem 'figaro', '~> 0.6.3'
 gem 'awesome_print', '~> 1.1.0'
 gem 'unicorn', '~> 4.6.2'
 gem 'jquery-rails', '~> 2.2.1'
-# gem 'slim-rails', '~> 1.1.1'
+gem 'slim-rails', '~> 1.1.1'
 gem 'papertrail', require: false
 gem 'simple_form', '~> 2.1.0'
 gem 'mechanize'

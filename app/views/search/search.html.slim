@@ -1,0 +1,16 @@
+= render 'form'
+.row
+  .large-12.columns
+    h4 Search Result:
+    table.responsive style="width: 100%; max-height: 400px;"
+      thead
+        tr
+          th Price (SGD)
+          th Site name
+          th Bedrooms
+          th Bathrooms
+          th Size (sqft)
+          th Phone number
+      tbody
+        - @properties.each do |p|
+          = render 'property', property: p
