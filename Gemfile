@@ -33,30 +33,30 @@ group :assets do
 end
 
 group :development, :test do
-  gem 'rspec-rails', '~> 2.13.0'
-  gem 'guard-rspec', '~> 2.5.3'
-  gem 'guard-spork' , '~> 1.5.0'
-  gem 'factory_girl_rails', '~> 4.2.1'
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'guard-spork'
+  gem 'factory_girl_rails'
 end
 
 group :development do
-  gem 'quiet_assets', '~> 1.0.2'
-  gem 'annotate', '~> 2.5.0'
-  gem "letter_opener", '~> 1.1.0'
-  gem 'bullet', '~> 4.5.0'
-  gem 'faker', '~> 1.1.2'
+  gem 'quiet_assets'
+  gem 'annotate'
+  gem "letter_opener"
+  gem 'bullet'
+  gem 'faker'
 end
 
 group :test do
-  gem 'capybara', '~> 1.1.3'
-  gem 'cucumber-rails', '~> 1.3.1'
-  gem 'database_cleaner', '~> 0.9.1'
-  gem 'spork', '~> 0.9.2'
-  gem 'launchy', '~> 2.2.0'
+  gem 'capybara'
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+  gem 'spork'
+  gem 'launchy'
   gem 'rb-fsevent', require: false
-  gem 'growl', '~> 1.0.3'
-  gem 'fuubar', '~> 1.1.0'
-  gem 'poltergeist', '~> 1.0.2'
+  gem 'growl'
+  gem 'fuubar'
+  gem 'poltergeist'
 end
 
 

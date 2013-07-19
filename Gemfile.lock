@@ -34,15 +34,14 @@ GEM
     arel (3.0.2)
     awesome_print (1.1.0)
     builder (3.0.4)
-    bullet (4.5.0)
+    bullet (4.6.0)
       uniform_notifier
-    capybara (1.1.4)
+    capybara (2.1.0)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
-      selenium-webdriver (~> 2.0)
-      xpath (~> 0.1.4)
+      xpath (~> 2.0)
     childprocess (0.3.9)
       ffi (~> 1.0, >= 1.0.11)
     chronic (0.9.1)
@@ -72,7 +71,7 @@ GEM
       cucumber (>= 1.2.0)
       nokogiri (>= 1.5.0)
       rails (~> 3.0)
-    database_cleaner (0.9.1)
+    database_cleaner (1.0.1)
     diff-lcs (1.2.4)
     domain_name (0.5.12)
       unf (>= 0.0.5, < 1.0.0)
@@ -112,9 +111,9 @@ GEM
       lumberjack (>= 1.0.2)
       pry (>= 0.9.10)
       thor (>= 0.14.6)
-    guard-rspec (2.5.4)
-      guard (>= 1.1)
-      rspec (~> 2.11)
+    guard-rspec (3.0.2)
+      guard (>= 1.8)
+      rspec (~> 2.13)
     guard-spork (1.5.1)
       childprocess (>= 0.2.3)
       guard (>= 1.1)
@@ -130,7 +129,7 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.0)
     kgio (2.8.0)
-    launchy (2.2.0)
+    launchy (2.3.0)
       addressable (~> 2.3)
     letter_opener (1.1.2)
       launchy (~> 2.2)
@@ -170,12 +169,10 @@ GEM
       faraday_middleware (~> 0.8.4)
       yajl-ruby
     pg (0.15.1)
-    poltergeist (1.0.3)
-      capybara (~> 1.1)
-      childprocess (~> 0.3)
-      faye-websocket (~> 0.4.4)
+    poltergeist (1.3.0)
+      capybara (~> 2.1.0)
+      faye-websocket (>= 0.4.4, < 0.5.0)
       http_parser.rb (~> 0.5.3)
-      multi_json (~> 1.0)
     polyglot (0.3.3)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
@@ -214,35 +211,29 @@ GEM
       ffi (>= 0.5.0)
     rdoc (3.12.2)
       json (~> 1.4)
-    rspec (2.13.0)
-      rspec-core (~> 2.13.0)
-      rspec-expectations (~> 2.13.0)
-      rspec-mocks (~> 2.13.0)
-    rspec-core (2.13.1)
-    rspec-expectations (2.13.0)
+    rspec (2.14.1)
+      rspec-core (~> 2.14.0)
+      rspec-expectations (~> 2.14.0)
+      rspec-mocks (~> 2.14.0)
+    rspec-core (2.14.3)
+    rspec-expectations (2.14.0)
       diff-lcs (>= 1.1.3, < 2.0)
     rspec-instafail (0.2.4)
-    rspec-mocks (2.13.1)
-    rspec-rails (2.13.2)
+    rspec-mocks (2.14.1)
+    rspec-rails (2.14.0)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       railties (>= 3.0)
-      rspec-core (~> 2.13.0)
-      rspec-expectations (~> 2.13.0)
-      rspec-mocks (~> 2.13.0)
+      rspec-core (~> 2.14.0)
+      rspec-expectations (~> 2.14.0)
+      rspec-mocks (~> 2.14.0)
     ruby-progressbar (1.1.1)
-    rubyzip (0.9.9)
     sass (3.2.9)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
     sassy-buttons (0.2)
-    selenium-webdriver (2.33.0)
-      childprocess (>= 0.2.5)
-      multi_json (~> 1.0)
-      rubyzip
-      websocket (~> 1.0.4)
     simple_form (2.1.0)
       actionpack (~> 3.0)
       activemodel (~> 3.0)
@@ -280,8 +271,7 @@ GEM
       raindrops (~> 0.7)
     uniform_notifier (1.2.0)
     webrobots (0.1.1)
-    websocket (1.0.7)
-    xpath (0.1.4)
+    xpath (2.0.0)
       nokogiri (~> 1.3)
     yajl-ruby (1.1.0)
     zurb-foundation (4.3.0)
@@ -291,38 +281,38 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  annotate (~> 2.5.0)
+  annotate
   awesome_print
-  bullet (~> 4.5.0)
-  capybara (~> 1.1.3)
+  bullet
+  capybara
   coffee-rails
   compass-rails
-  cucumber-rails (~> 1.3.1)
-  database_cleaner (~> 0.9.1)
-  factory_girl_rails (~> 4.2.1)
-  faker (~> 1.1.2)
+  cucumber-rails
+  database_cleaner
+  factory_girl_rails
+  faker
   figaro
-  fuubar (~> 1.1.0)
-  growl (~> 1.0.3)
-  guard-rspec (~> 2.5.3)
-  guard-spork (~> 1.5.0)
+  fuubar
+  growl
+  guard-rspec
+  guard-spork
   jquery-rails
-  launchy (~> 2.2.0)
-  letter_opener (~> 1.1.0)
+  launchy
+  letter_opener
   mechanize
   newrelic_rpm
   papertrail
   pg
-  poltergeist (~> 1.0.2)
-  quiet_assets (~> 1.0.2)
+  poltergeist
+  quiet_assets
   rails (= 3.2.13)
   rb-fsevent
-  rspec-rails (~> 2.13.0)
+  rspec-rails
   sass-rails
   sassy-buttons
   simple_form
   slim-rails
-  spork (~> 0.9.2)
+  spork
   uglifier
   unicorn
   zurb-foundation

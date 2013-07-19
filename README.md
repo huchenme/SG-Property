@@ -1,5 +1,7 @@
 # SG Property Test App
 [![Build Status](https://travis-ci.org/huchenme/SG-Property.png?branch=master)](https://travis-ci.org/huchenme/SG-Property)
+[![Code Climate](https://codeclimate.com/github/huchenme/SG-Property.png)](https://codeclimate.com/github/huchenme/SG-Property)
+[![Dependency Status](https://gemnasium.com/huchenme/SG-Property.png)](https://gemnasium.com/huchenme/SG-Property)
 
 Live site: [sgproperty.herokuapp.com](http://sgproperty.herokuapp.com "live site")
 
