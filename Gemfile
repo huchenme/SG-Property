@@ -6,30 +6,30 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg', '~> 0.15.1'
-gem 'newrelic_rpm', '~> 3.6.0'
-gem 'figaro', '~> 0.6.3'
-gem 'awesome_print', '~> 1.1.0'
-gem 'unicorn', '~> 4.6.2'
-gem 'jquery-rails', '~> 2.2.1'
-gem 'slim-rails', '~> 1.1.1'
+gem 'pg'
+gem 'newrelic_rpm'
+gem 'figaro'
+gem 'awesome_print'
+gem 'unicorn'
+gem 'jquery-rails'
+gem 'slim-rails'
 gem 'papertrail', require: false
-gem 'simple_form', '~> 2.1.0'
+gem 'simple_form'
 gem 'mechanize'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails'
+  gem 'coffee-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
-  gem "sassy-buttons", '~> 0.1.4'
-  gem 'uglifier', '~> 2.0.1'
-  gem 'compass-rails', '~> 1.0.3'
-  gem 'zurb-foundation', '~> 4.1.2'
+  gem "sassy-buttons"
+  gem 'uglifier'
+  gem 'compass-rails'
+  gem 'zurb-foundation'
 end
 
 group :development, :test do

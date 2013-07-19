@@ -94,7 +94,7 @@ GEM
     faye-websocket (0.4.7)
       eventmachine (>= 0.12.0)
     ffi (1.9.0)
-    figaro (0.6.4)
+    figaro (0.7.0)
       bundler (~> 1.0)
       rails (>= 3, < 5)
     formatador (0.2.4)
@@ -125,7 +125,7 @@ GEM
     http_parser.rb (0.5.3)
     i18n (0.6.1)
     journey (1.0.4)
-    jquery-rails (2.2.2)
+    jquery-rails (3.0.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.0)
@@ -237,9 +237,7 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
-    sassy-buttons (0.1.4)
-      compass (>= 0.12.2)
-      sass (>= 3.2.0)
+    sassy-buttons (0.2)
     selenium-webdriver (2.33.0)
       childprocess (>= 0.2.5)
       multi_json (~> 1.0)
@@ -248,14 +246,14 @@ GEM
     simple_form (2.1.0)
       actionpack (~> 3.0)
       activemodel (~> 3.0)
-    slim (1.3.9)
-      temple (~> 0.6.3)
+    slim (2.0.0)
+      temple (~> 0.6.5)
       tilt (~> 1.3, >= 1.3.3)
-    slim-rails (1.1.1)
+    slim-rails (2.0.1)
       actionpack (>= 3.0, < 4.1)
       activesupport (>= 3.0, < 4.1)
       railties (>= 3.0, < 4.1)
-      slim (~> 1.3)
+      slim (~> 2.0)
     slop (3.4.5)
     spork (0.9.2)
     sprockets (2.2.2)
@@ -270,7 +268,7 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.37)
-    uglifier (2.0.1)
+    uglifier (2.1.2)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
     unf (0.1.1)
@@ -286,7 +284,7 @@ GEM
     xpath (0.1.4)
       nokogiri (~> 1.3)
     yajl-ruby (1.1.0)
-    zurb-foundation (4.1.6)
+    zurb-foundation (4.3.0)
       sass (>= 3.2.0)
 
 PLATFORMS
@@ -294,37 +292,37 @@ PLATFORMS
 
 DEPENDENCIES
   annotate (~> 2.5.0)
-  awesome_print (~> 1.1.0)
+  awesome_print
   bullet (~> 4.5.0)
   capybara (~> 1.1.3)
-  coffee-rails (~> 3.2.1)
-  compass-rails (~> 1.0.3)
+  coffee-rails
+  compass-rails
   cucumber-rails (~> 1.3.1)
   database_cleaner (~> 0.9.1)
   factory_girl_rails (~> 4.2.1)
   faker (~> 1.1.2)
-  figaro (~> 0.6.3)
+  figaro
   fuubar (~> 1.1.0)
   growl (~> 1.0.3)
   guard-rspec (~> 2.5.3)
   guard-spork (~> 1.5.0)
-  jquery-rails (~> 2.2.1)
+  jquery-rails
   launchy (~> 2.2.0)
   letter_opener (~> 1.1.0)
   mechanize
-  newrelic_rpm (~> 3.6.0)
+  newrelic_rpm
   papertrail
-  pg (~> 0.15.1)
+  pg
   poltergeist (~> 1.0.2)
   quiet_assets (~> 1.0.2)
   rails (= 3.2.13)
   rb-fsevent
   rspec-rails (~> 2.13.0)
-  sass-rails (~> 3.2.3)
-  sassy-buttons (~> 0.1.4)
-  simple_form (~> 2.1.0)
-  slim-rails (~> 1.1.1)
+  sass-rails
+  sassy-buttons
+  simple_form
+  slim-rails
   spork (~> 0.9.2)
-  uglifier (~> 2.0.1)
-  unicorn (~> 4.6.2)
-  zurb-foundation (~> 4.1.2)
+  uglifier
+  unicorn
+  zurb-foundation
