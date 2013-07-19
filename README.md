@@ -1,4 +1,5 @@
 # SG Property Test App
+[![Build Status](https://travis-ci.org/huchenme/SG-Property.png?branch=master)](https://travis-ci.org/huchenme/SG-Property)
 
 Live site: [sgproperty.herokuapp.com](http://sgproperty.herokuapp.com "live site")
 
