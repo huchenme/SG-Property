@@ -19,9 +19,9 @@ SgProperty::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
-  
+
   config.static_cache_control = "public, max-age=31536000"
-  
+
   config.action_controller.asset_host = ENV['ASSET_HOST']
 
   # Defaults to nil and saved in location specified by config.assets.prefix
