@@ -4,7 +4,7 @@ rvm:
 env:
   - DB=postgresql
 script:
-  - RAILS_ENV=test bundle exec rake --trace db:migrate test
+  - RAILS_ENV=test bundle exec rake --trace db:test:prepare
 before_script:
   - psql -c "CREATE USER jiweiweisg WITH PASSWORD 'jiweiweisg';" -U postgres
   - psql -c 'create database sg_property_test;' -U postgres
